@@ -2775,7 +2775,7 @@ body {
     position:absolute;
     width: calc(100% - 30px);
     bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .main-nav .navbar_inner {
