@@ -415,51 +415,7 @@ if (! function_exists( 'duena_breadcrumb' )) {
 add_action( 'before_sidebar', 'duena_show_author_bio', 10 );
 
 function duena_show_author_bio() {
-	if ( 'no' != of_get_option('g_author_bio') ) {
-	?>
-	<div class="author_bio_sidebar">
-		<div class="social_box">
-	<?php
-		if ( '' != of_get_option('g_author_bio_social_twitter') ) {
-			echo "<a href='".esc_url( of_get_option('g_author_bio_social_twitter') )."'><i class='fa fa-twitter'></i></a>\n";
-		}
-		if ( '' != of_get_option('g_author_bio_social_facebook') ) {
-			echo "<a href='".esc_url( of_get_option('g_author_bio_social_facebook') )."'><i class='fa fa-facebook'></i></a>\n";
-		}
-		if ( '' != of_get_option('g_author_bio_social_google') ) {
-			echo "<a href='".esc_url( of_get_option('g_author_bio_social_google') )."'><i class='fa fa-google-plus'></i></a>\n";
-		}
-		if ( '' != of_get_option('g_author_bio_social_linked') ) {
-			echo "<a href='".esc_url( of_get_option('g_author_bio_social_linked') )."'><i class='fa fa-linkedin'></i></a>\n";
-		}
-		if ( '' != of_get_option('g_author_bio_social_rss') ) {
-			echo "<a href='".esc_url( of_get_option('g_author_bio_social_rss') )."'><i class='fa fa-rss'></i></a>\n";
-		}
-	?>
-		</div>
-		<?php if (( '' != of_get_option('g_author_bio_title') ) || ('' != of_get_option('g_author_bio_img')) || ('' != of_get_option('g_author_bio_message')) ) { ?>
-		<div class="content_box">
-		<?php
-			if ( '' != of_get_option('g_author_bio_title') ) {
-				echo "<h2>".of_get_option('g_author_bio_title')."</h2>\n";
-			}
-			if ( '' != of_get_option('g_author_bio_img') ) {
-				if ( '' != of_get_option('g_author_bio_title') ) {
-					$img_alt = of_get_option('g_author_bio_title');
-				} else {
-					$img_alt = get_bloginfo( 'name' );
-				}
-				echo "<figure class='author_bio_img'><img src='".esc_url( of_get_option('g_author_bio_img') )."' alt='".esc_attr( $img_alt )."'></figure>\n";
-			}
-			if ( '' != of_get_option('g_author_bio_message') ) {
-				echo "<div class='author_bio_message'>".of_get_option('g_author_bio_message')."</div>\n";
-			}
-		?>
-		</div>
-		<?php } ?>
-	</div>
-	<?php
-	}
+	
 }
 
 

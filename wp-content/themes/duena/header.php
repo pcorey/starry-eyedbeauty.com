@@ -63,9 +63,21 @@
 		                'theme_location' => 'primary' 
 					) ); 
 				?>
+                 <div class="social_box">
+                    <a href='https://twitter.com/msestellemarie'><i class='fa fa-twitter'></i></a>
+                    <a href='https://www.facebook.com/msestellemarie'><i class='fa fa-facebook'></i></a>
+                    <a href='http://instagram.com/msestellemarie'><i class='fa fa-instagram'></i></a>
+                    <a href='http://www.youtube.com/user/msestellemarie'><i class='fa fa-youtube'></i></a>
 				</div>
 			</nav><!-- #site-navigation -->
 		</div>
+
+        <div class="social_box social_box_mobile">
+            <a href='https://twitter.com/msestellemarie'><i class='fa fa-twitter'></i></a>
+            <a href='https://www.facebook.com/msestellemarie'><i class='fa fa-facebook'></i></a>
+            <a href='http://instagram.com/msestellemarie'><i class='fa fa-instagram'></i></a>
+            <a href='http://www.youtube.com/user/msestellemarie'><i class='fa fa-youtube'></i></a>
+        </div>
 	</header><!-- #masthead -->
 	<?php if( (is_front_page()) && (of_get_option('sl_show') != 'no') ) { ?>
 	<section id="slider-wrapper">

@@ -2810,3 +2810,66 @@ header {
 footer > .container > div {
     margin-bottom: 15px;
 }
+
+
+#topnav {
+    float: left;
+}
+
+.social_box {
+    float: right;
+    line-height: 52px;
+}
+
+.social_box a {
+    display: inline-block;
+    color: #353535;
+    margin-left: 20px;
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.social_box a:hover {
+    color: #353535;
+}
+
+.social_box a:last-of-type {
+    margin-right: 20px;
+}
+
+.logo img {
+    margin-bottom: 30px;
+}
+
+.social_box_mobile {
+    text-align: center;
+    float: none;
+}
+
+.social_box_mobile a {
+    margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    .social_box {
+        display: none;
+    }
+    .social_box_mobile {
+        display: block;
+    }
+    .logo img {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .social_box_mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 980px) {
+    .social_box a {
+        font-size: 24px;
+    }
+}
