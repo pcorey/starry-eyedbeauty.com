@@ -31,7 +31,7 @@ select,
 textarea {
   color: #8B8686;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
 }
 /* Headings */
@@ -43,7 +43,7 @@ h5,
 h6 {
   clear: both;
   font-family: 'BenchNine', sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 /* Lists */
 ul {
@@ -1770,7 +1770,7 @@ padding:10px 20px 20px;
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .wp-caption {
-    display: table;
+    /*display: table;*/
   }
   .wp-caption.alignleft {
     float: none;
